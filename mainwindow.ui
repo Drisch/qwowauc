@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>604</width>
-    <height>358</height>
+    <width>895</width>
+    <height>646</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -20,40 +20,118 @@
    </sizepolicy>
   </property>
   <property name="windowTitle">
-   <string>Аукцион</string>
+   <string>Аукцион WoW</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QLineEdit" name="password">
+   <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
-      <x>469</x>
-      <y>10</y>
+      <x>0</x>
+      <y>0</y>
+      <width>731</width>
+      <height>591</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="Lots">
+     <attribute name="title">
+      <string>Лоты</string>
+     </attribute>
+     <widget class="QWidget" name="gridLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>351</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QLineEdit" name="searchLine"/>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="searchButton">
+         <property name="text">
+          <string>Искать</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="My_lots">
+     <attribute name="title">
+      <string>Мои лоты</string>
+     </attribute>
+    </widget>
+   </widget>
+   <widget class="QComboBox" name="charBox">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>120</y>
       <width>121</width>
       <height>21</height>
      </rect>
     </property>
+    <item>
+     <property name="text">
+      <string>Персонаж</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Персонаж 2</string>
+     </property>
+    </item>
    </widget>
-   <widget class="QLineEdit" name="login">
+   <widget class="QWidget" name="gridLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>469</x>
-      <y>40</y>
-      <width>121</width>
-      <height>21</height>
+      <x>740</x>
+      <y>0</y>
+      <width>141</width>
+      <height>111</height>
      </rect>
     </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="4" column="0">
+      <widget class="QPushButton" name="enterButton">
+       <property name="text">
+        <string>Войти</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLineEdit" name="login">
+       <property name="text">
+        <string>Логин</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLineEdit" name="password">
+       <property name="text">
+        <string>Пароль</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
-   <widget class="QPushButton" name="enter">
+   <widget class="QPushButton" name="exitButton">
     <property name="geometry">
      <rect>
-      <x>490</x>
-      <y>70</y>
-      <width>80</width>
+      <x>750</x>
+      <y>570</y>
+      <width>121</width>
       <height>23</height>
      </rect>
     </property>
     <property name="text">
-     <string>Войти</string>
+     <string>Выход</string>
     </property>
    </widget>
   </widget>
@@ -62,7 +140,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>604</width>
+     <width>895</width>
      <height>22</height>
     </rect>
    </property>

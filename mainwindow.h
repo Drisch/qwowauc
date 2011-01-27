@@ -17,6 +17,13 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    QAction *exitAction;
+
+    QMenu *fileMenu;
+
+private slots:
+    void on_exitButton_clicked();
+    void quit();
 };
 
 #endif // MAINWINDOW_H
