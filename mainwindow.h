@@ -23,7 +23,6 @@ private:
 
 private slots:
     void on_exitButton_clicked();
-    void quit();
-};
+ };
 
 #endif // MAINWINDOW_H

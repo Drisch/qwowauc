@@ -8,7 +8,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    ui->exit->connect(exit, SIGNAL(triggered()), qApp, SLOT(quit()));
+    //ui->exit->connect(exit, SIGNAL(triggered()), qApp, SLOT(quit()));
 }
 
 MainWindow::~MainWindow()
@@ -18,5 +18,5 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_exitButton_clicked()
 {
-    ui->exitButton->connect(exit, SIGNAL(clicked()), qApp, SLOT(quit()));
+    //ui->exitButton->connect(exit, SIGNAL(clicked()), qApp, SLOT(quit()));
 }
