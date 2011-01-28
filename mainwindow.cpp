@@ -18,5 +18,5 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_exitButton_clicked()
 {
-    //ui->exitButton->connect(&exit, SIGNAL(clicked()), qApp, SLOT(quit()));
+    ui->exitButton->connect(exit, SIGNAL(clicked()), qApp, SLOT(quit()));
 }
