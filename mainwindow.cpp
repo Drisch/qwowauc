@@ -2,21 +2,22 @@
 #include "ui_mainwindow.h"
 #include <QtGui>
 #include <QPushButton>
+#include <QtGui/QApplication>
+#include <QObject>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    //ui->exit->connect(exit, SIGNAL(triggered()), qApp, SLOT(quit()));
+}
+
+void MainWindow::on_exitButton_clicked()
+{
+    ui->exitButton->connect(ui->exitButton, SIGNAL(clicked()), qApp, SLOT(quit()));
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
-}
-
-void MainWindow::on_exitButton_clicked()
-{
-    //ui->exitButton->connect(exit, SIGNAL(clicked()), qApp, SLOT(quit()));
 }

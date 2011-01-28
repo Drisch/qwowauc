@@ -18,7 +18,6 @@ public:
 private:
     Ui::MainWindow *ui;
     QAction *exitAction;
-
     QMenu *fileMenu;
 
 private slots:
